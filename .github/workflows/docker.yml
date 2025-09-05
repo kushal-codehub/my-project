@@ -32,4 +32,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-docker:1.0.0
+          tags: nodejs-docker:1.0.0
