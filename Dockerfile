@@ -2,7 +2,7 @@
 FROM gradle:7.6.0-jdk17 AS builder
 WORKDIR /app
 COPY . .
-RUN ./gradle build 
+RUN ./gradle build --no-daemon
 
 # Stage 2: runtime
 FROM openjdk:17-jdk-slim
