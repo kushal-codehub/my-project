@@ -19,7 +19,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build JAR with Gradle
-        run: ./gradlew build 
+        run: ./gradlew build --no-daemon
         
   build_docker_image:
     runs-on: ubuntu-latest
